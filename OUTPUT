@@ -1,0 +1,34 @@
+OUTPUT:
+TEST
+Score 1 of 8: "88"
+  -> Result: 88 - PASSED
+Score 2 of 8: "75"
+  -> Result: 75 - PASSED
+Score 3 of 8: "85"
+  -> Result: 85 - PASSED
+Score 4 of 8: "90"
+  -> Result: 90 - PASSED
+Score 5 of 8: "70"
+  -> Result: 70 - FAILED (Needs Remedial)
+Score 6 of 8: "60"
+  -> Result: 60 - FAILED (Needs Remedial)
+Score 7 of 8: "95"
+  -> Result: 95 - PASSED
+Score 8 of 8: "abc"
+  -> [Error Handled] Invalid input "abc": Cannot parse to integer.
+
+
+SUMMARY REPORT:
+Total Inputs Processed: 8
+Valid Scores Count: 7
+Passed: 5
+Failed: 2
+Class Average: 80.43%
+---------------------------------------------------------------------------------------
+Explanation of Calculation:
+Total Inputs: 8 items processed ('88', '75', '85', '90', '70', '60', '95', 'abc').Valid 
+Scores: 7 numeric entries (Sum = $88 + 75 + 85 + 90 + 70 + 60 + 95 = 563$).
+Passed ($\ge 75$): 5 (88, 75, 85, 90, 95).
+Failed ($< 75$): 2 (70, 60).
+Errors Handled: 1 ('abc').
+Class Average: $563 \div 7 = 80.43\%$.
